@@ -4,8 +4,9 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
+    "dev": "vite --open /app.html",
+    "build": "tsc -b && vite build && node scripts/finalize-build.mjs",
+    "build:pages": "GITHUB_ACTIONS=true npm run build && node scripts/publish-root.mjs",
     "lint": "eslint .",
     "test": "vitest run",
     "typecheck": "tsc -b --pretty false",

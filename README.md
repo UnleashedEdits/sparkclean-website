@@ -11,6 +11,10 @@ npm run dev
 
 Validation: `npm run typecheck`, `npm run lint`, and `npm run build`.
 
+## GitHub Pages
+
+The repository publishes from the `main` branch root. Run `npm run build:pages` before committing so the compiled site is refreshed at the repository root; editable React source remains in `src/`, with `app.html` as its Vite entry.
+
 ## Launch boundary
 
 The site is indexable and builds as a static production bundle. The estimate planner does not transmit or store data; visitors call to confirm their clean. Before an owner-controlled launch, replace provisional media with approved originals and confirm the legal name, contact channels, services, radius, policies, pricing, and media permissions recorded in `docs/SOURCE_INVENTORY.md`.
